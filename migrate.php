@@ -17,6 +17,8 @@ function usage(?string $message = null): void
     echo "Syntax: migrate.php [create|status|up|up-to|reset|down|down-to] [args]" . PHP_EOL;
     echo "options:" . PHP_EOL;
     echo " status\t\tShow the status of the migrations" . PHP_EOL;
+    echo " create\t\tCreate a migration with the provided name" . PHP_EOL;
+    echo " \t\tEx: migrate.php create example" . PHP_EOL;
     echo " up-one\t\tApplies the next pending migration" . PHP_EOL;
     echo " up\t\tApplies all the pending migrations" . PHP_EOL;
     echo " up-to\t\tApplies all the pending migrations up to the migration with the provided ID" . PHP_EOL;
